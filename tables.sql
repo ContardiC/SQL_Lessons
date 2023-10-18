@@ -11,3 +11,9 @@ CREATE TABLE Dipendenti (
     DataAssunzione DATE,
     ID_Dipartimento INT
 );
+
+CREATE TABLE Dipartimenti (
+    ID_Dipartimento INT PRIMARY KEY,
+    NomeDipartimento VARCHAR(100),
+    Ubicazione VARCHAR(100)
+);

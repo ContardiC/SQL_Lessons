@@ -28,5 +28,9 @@ SELECT ID_Dipartimento, SUM(Stipendio) FROM Dipendenti GROUP BY ID_Dipartimento 
 SELECT * FROM Dipendenti WHERE AnnoDiNascita > 2000;
 #Conta il numero di dipendenti di sesso maschile e femminile.
 SELECT Sesso, COUNT(*) FROM Dipendenti GROUP BY Sesso;
+#Supponiamo di avere una tabella Dipendenti con un campo ManagerID che fa riferimento all’ID di un altro dipendente che è il manager.
+SELECT D1.Nome AS Dipendente, D2.Nome AS Manager
+FROM Dipendenti D1
+INNER JOIN Dipendenti D2 ON D1.ManagerID = D2.ID;
 
 
