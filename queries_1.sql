@@ -1,3 +1,5 @@
+#SET 1
+
 #Seleziona tutti i dipendenti che hanno una posizione di ‘Manager’.
 SELECT * FROM Dipendenti WHERE Posizione = 'Manager';
 #Aggiorna lo stipendio del dipendente che ha ID = 4. (Supponiamo che tu voglia impostare lo stipendio a 5000)
@@ -33,4 +35,14 @@ SELECT D1.Nome AS Dipendente, D2.Nome AS Manager
 FROM Dipendenti D1
 INNER JOIN Dipendenti D2 ON D1.ManagerID = D2.ID;
 
-
+#SET 2
+#Seleziona tutti i dipendenti e i relativi dipartimenti:
+SELECT * FROM Dipendenti D INNER JOIN Dipartimenti DP ON D.ID_Dipartimento = DP.ID_Dipartimento;
+#Seleziona i nomi dei dipendenti e i nomi dei loro dipartimenti:
+SELECT D.Nome, DP.NomeDipartimento FROM Dipendenti D INNER JOIN Dipartimenti DP ON D.ID_Dipartimento = DP.ID_Dipartimento;
+#Seleziona i dipendenti con uno stipendio superiore a 50000 e il nome del loro dipartimento:
+SELECT D.Nome, DP.NomeDipartimento FROM Dipendenti D INNER JOIN Dipartimenti DP ON D.ID_Dipartimento = DP.ID_Dipartimento WHERE D.Stipendio > 50000;
+#Conta il numero di dipendenti in ogni dipartimento
+SELECT DP.NomeDipartimento, COUNT(*) FROM Dipendenti D INNER JOIN Dipartimenti DP ON D.ID_Dipartimento = DP.ID_Dipartimento GROUP BY DP.NomeDipartimento;
+#Seleziona i dipendenti che sono stati assunti nel 2023 e il nome del loro dipartimento:
+SELECT D.Nome, DP.NomeDipartimento FROM Dipendenti D INNER JOIN Dipartimenti DP ON D.ID_Dipartimento = DP.ID_Dipartimento WHERE D.DataAssunzione > '2023-01-01';
