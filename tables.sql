@@ -12,8 +12,27 @@ CREATE TABLE Dipendenti (
     ID_Dipartimento INT
 );
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 CREATE TABLE Dipartimenti (
-    ID_Dipartimento INT PRIMARY KEY,
-    NomeDipartimento VARCHAR(100),
+    ID INT PRIMARY KEY,
+    Nome VARCHAR(100),
     Ubicazione VARCHAR(100)
 );
