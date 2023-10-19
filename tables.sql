@@ -12,7 +12,13 @@ CREATE TABLE Dipendenti (
     ID_Dipartimento INT
 );
 
+#tabella Dipartimenti con i seguenti campi: ID, Nome, Ubicazione.
 
+CREATE TABLE Dipartimenti (
+    ID INT PRIMARY KEY,
+    Nome VARCHAR(100),
+    Ubicazione VARCHAR(100)
+);
 
 
 
