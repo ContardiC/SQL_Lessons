@@ -1,4 +1,4 @@
-#Creeremo una tabella chiamata Dipendenti con i seguenti campi: ID, Nome, Cognome, AnnoDiNascita, Sesso, Posizione, Stipendio, DataAssunzione, ID_Dipartimento.
+--Creeremo una tabella chiamata Dipendenti con i seguenti campi: ID, Nome, Cognome, AnnoDiNascita, Sesso, Posizione, Stipendio, DataAssunzione, ID_Dipartimento.
 
 CREATE TABLE Dipendenti (
     ID INT PRIMARY KEY,
@@ -7,29 +7,12 @@ CREATE TABLE Dipendenti (
     AnnoDiNascita INT,
     Sesso CHAR(1),
     Posizione VARCHAR(100),
-    Stipendio DECIMAL(12,4),
+    Stipendio DECIMAL(10,2),
     DataAssunzione DATE,
     ID_Dipartimento INT
 );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+--tabella Dipartimenti con i seguenti campi: ID, Nome, Ubicazione.
 
 CREATE TABLE Dipartimenti (
     ID INT PRIMARY KEY,
