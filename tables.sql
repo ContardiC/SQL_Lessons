@@ -7,7 +7,7 @@ CREATE TABLE Dipendenti (
     AnnoDiNascita INT,
     Sesso CHAR(1),
     Posizione VARCHAR(100),
-    Stipendio DECIMAL(10,2),
+    Stipendio DECIMAL(12,4),
     DataAssunzione DATE,
     ID_Dipartimento INT
 );
