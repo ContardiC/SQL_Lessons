@@ -19,26 +19,3 @@ CREATE TABLE Dipartimenti (
     Nome VARCHAR(100),
     Ubicazione VARCHAR(100)
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-CREATE TABLE Dipartimenti (
-    ID INT PRIMARY KEY,
-    Nome VARCHAR(100),
-    Ubicazione VARCHAR(100)
-);
